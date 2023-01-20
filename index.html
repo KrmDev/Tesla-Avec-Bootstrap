@@ -15,9 +15,9 @@
 
 <header>
   
-  <nav class="bg-dark text-center p-3">
+  <nav class="navbar navbar-dark bg-dark p-3">
     <div class="container">
-      <img src="https://believemy.com/uploads/2f3811b9174e35a2d77902ffd36a9a37_4dfb82dd429edb6a11a81ff74e9abfc4.png" style="height: 30px"/>
+      <img src="https://believemy.com/uploads/2f3811b9174e35a2d77902ffd36a9a37_4dfb82dd429edb6a11a81ff74e9abfc4.png" style="height: 30px" class="mx-auto d-block"/>
     </div>
   </nav>
   
@@ -27,7 +27,7 @@
 
 <div style="background: center/cover url('https://believemy.com/uploads/126d05180ddf6f2ea67c8b669855bf89_e45c0e92710b43b3b938ed8fc4938f71.png')">
   <div class="container card-body text-white p-4">
-    <h1 class="card-title">Bienvenue.</h1>
+    <h1 class="card-title mb-3 display-3">Bienvenue.</h1>
     <p class="card-text">Le site Tesla vous permet de commander vos fusées et vos voitures, même lorsque vous êtes dans votre canapé.</p>
     <span class="badge bg-success p-2">Un conseillé est en ligne.</span>
   </div>
@@ -50,17 +50,17 @@
     Bienvenue sur Tesla. Ce site est en maintenance.
     <hr>
       <!-- ICI : les deux boutons -->
-      <div class="btn-group">
-        <button class="btn bg-danger text-white">Suivre les avancements</button>
-        <button class="btn bg-success text-white">Nous contacter</button>
+      <div class="btn-group btn-block">
+        <a class="btn btn-danger" href="#">Suivre les avancements</a>
+        <a class="btn btn-success" href="#">Nous contacter</a>
       </div>
     </div>
     
-    <nav class="mt-3 alert alert-light p-2">
+    <nav class="mt-3 p-2 bg-light rounded-1">
      <!-- ICI : fil d'ariane -->
      <ul class="breadcrumb">
         <li class="breadcrumb-item"><a href="#">Accueil</a></li>
-        <li class="breadcrumb-item"><a class="text-decoration-none text-secondary" href="#">Maintenance</a></li>
+        <li class="breadcrumb-item">Maintenance</li>
      </ul>
       
     </nav>
@@ -78,7 +78,7 @@
     <!-- ICI : les cartes --> 
     
     <div class="card">
-      <img src="https://believemy.com/uploads/c7fe8837368024dc01e1845337f167e9_18fb807dabb97a3e4f920d1b0c9176b1.png" alt="...">
+      <img class="card-img-top" src="https://believemy.com/uploads/c7fe8837368024dc01e1845337f167e9_18fb807dabb97a3e4f920d1b0c9176b1.png" alt="...">
       <div class="card-body bg-secondary text-white">
         <h5 class="card-title">Nouveautés</h5>
         <p class="card-text">Vous pourrez bientôt acheter des fusées pour aller sur la lune.</p>
@@ -86,7 +86,7 @@
     </div>
     
     <div class="card mt-3">
-        <img src="https://believemy.com/uploads/c7fe8837368024dc01e1845337f167e9_18fb807dabb97a3e4f920d1b0c9176b1.png" alt="...">
+        <img class="card-img-top" src="https://believemy.com/uploads/c7fe8837368024dc01e1845337f167e9_18fb807dabb97a3e4f920d1b0c9176b1.png" alt="...">
         <div class="card-header bg-secondary text-white">
             Informations
         </div>
@@ -110,6 +110,7 @@
         
         <label class="form-label" for="email">Adresse email</label>
         <input class="form-control" placeholder="Entrez votre adresse mail" type="email" name="email" id="email">
+        
 
         <label class="form-label mt-3" for="message">Message</label>
         <textarea class="form-control" name="message" id="message"></textarea>
