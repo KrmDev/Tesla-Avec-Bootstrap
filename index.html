@@ -102,14 +102,25 @@
 
 <!-- TROISIEME SECTION -->
 
-<section>
-  <div style="width: 400px">
-    <h2>Contactez-nous</h2>
+<section class="p-5 bg-dark mt-3">
+  <div class="text-white mx-auto" style="width: 400px">
+    <h2 class="mb-4">Contactez-nous</h2>
     <!-- ICI : formulaire -->
+    <form class="form">
+        
+        <label class="form-label" for="email">Adresse email</label>
+        <input class="form-control" placeholder="Entrez votre adresse mail" type="email" name="email" id="email">
+
+        <label class="form-label mt-3" for="message">Message</label>
+        <textarea class="form-control" name="message" id="message"></textarea>
+
+        <button class="mt-4 p-1 btn btn-outline-light">Soumettre</button>
+    </form>
   </div>
 </section>
 
 <!-- ICI : pied de page -->
+
    
 </body>
 </html>
